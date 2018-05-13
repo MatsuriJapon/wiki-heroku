@@ -51,6 +51,10 @@
       "description": "Password / PAT / Deploy Key to access the remote git repository",
       "value": "MartyMcFly88"
     },
+    "WIKI_GIT_PRIVATE_KEY": {
+      "description": "Private key to access the remote git repository",
+      "value": "secret"
+    },
     "WIKI_SERVER_EMAIL": {
       "description": "Default email to use as commit author",
       "value": "marty@example.com"
