@@ -9,7 +9,11 @@ VERSION=$(curl -L -s -S https://beta.requarks.io/api/version/stable)
 echo "-> Copying private key..."
 mkdir ./.ssh
 chmod 700 ./.ssh
+<<<<<<< HEAD
 echo $WIKI_GIT_PRIVATE_KEY > ./.ssh/git.pem
+=======
+echo $WIKI_GIT_PRIVATE_KEY | awk '{gsub(/\\n/,"\n")}1' > ./.ssh/git.pem
+>>>>>>> master
 chmod 400 ./.ssh/git.pem
 
 echo "-> Fetching latest build..."
